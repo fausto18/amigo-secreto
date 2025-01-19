@@ -22,6 +22,30 @@ body {
     justify-content: center;
     align-items: center;
 }
+/* style.css */
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .input-wrapper {
+      flex-direction: column;
+    }
+  }
 
 .main-content {
     display: flex;
@@ -160,3 +184,24 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+/* style.css */
+/* ... outros estilos ... */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Para telas menores */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+    .input-wrapper {
+      flex-direction: column;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
