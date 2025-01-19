@@ -26,7 +26,7 @@ btnAdicionar.addEventListener('click', () => {
 
 btnSortear.addEventListener('click', () => {
   if (nomes.length === 0) {
-    alert('Adicione pelo menos um nome para realizar o sorteio.');
+    alert('Adicione pelo menos dois nomes para realizar o sorteio.');
   } else {
     const sorteado = nomes[Math.floor(Math.random() * nomes.length)];
     resultado.textContent = `O amigo secreto é: ${sorteado}!`;
